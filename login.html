@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>IOSD | Mission & Vision</title>
+    <title>IOSD | Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site Description Here">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -20,10 +20,12 @@
     <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+
 </head>
 
 <body>
@@ -191,11 +193,16 @@
             </nav>
         </div>
     </div>
+
     <section class="text-center p-13 bt-mar">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-lg-8">
-                    <h1 class="ac-mar">IOSD LOGIN</h1>
+                    <img class="logo logo-dark" alt="logo" src="img/iosd/IOSD-logo.png" />
+
+                    <p class="lead mar-sz">
+                        Resource Portal</p>
+
 
                 </div>
             </div>
@@ -205,7 +212,7 @@
                     <div class="form-group">
 
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter email">
+                            placeholder="Username">
 
                     </div>
                     <div class="form-group">
@@ -216,11 +223,22 @@
 
 
                     </div>
-                    <button type="submit" class="btn btn-primary">Log In</button>
+
+                    <button type="submit" class="btn btn-primary" style="margin-bottom:10px;">Log In</button>
+                    <a href="https://iosd.tech/registrations/" class="float-left">Don't have account ? Register </a>
+                    <a href="#" class="float-right" id="forgot">Forgot
+                        Password ? </a>
+
                 </form>
+                <br>
+                <div class="alert alert-primary" id="messg" style="display:none" role="alert">
+                    Contact to your chapter head or mail us at <a href="#" class="alert-link">contact@iosd.tech</a>
+                </div>
             </div>
         </div>
         <!--end of container-->
+        <!-- This is the modal -->
+
     </section>
 
     <footer class="footer-3 text-center-xs space--xs ">
@@ -317,6 +335,19 @@
     <script src="js/spectragram.min.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/scripts.js"></script>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $("#forgot").click(function () {
+                $("#messg").toggle();
+            });
+        });
+    </script>
+
+
 </body>
 
 <!-- Mirrored from trystack.mediumra.re/page-about-company.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Jul 2018 08:18:51 GMT -->
